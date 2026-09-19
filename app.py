@@ -1,5 +1,8 @@
-import streamlit as st
+import streamlit as st 
+import random 
 
-st.header('Jogando uma moeda')
-
-st.write('Ainda não é um aplicativo funcional. Em construção.')
+st.title ('coin Flip App')
+st.write('Click the button to flip the coin.')
+if st.button ('Flip the Coin'):
+    result = random.choice(['Heads', 'Tails'])
+    st.subheader(f'Result: {result}')
